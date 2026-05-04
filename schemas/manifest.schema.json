@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/v1/manifest.schema.json",
+  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/manifest.schema.json",
   "title": "Creator Playlist Directory Manifest",
   "type": "object",
   "required": ["schemaVersion", "publishedAt", "revision", "assetBaseUrl", "creators", "featuredPlaylists", "recentlyPlayedCurators"],
@@ -15,4 +15,3 @@
   },
   "additionalProperties": false
 }
-

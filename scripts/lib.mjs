@@ -22,10 +22,10 @@ async function listJsonFiles(relativeDir) {
 }
 
 export async function loadDirectory() {
-  const metadata = await readJson('data/v1/metadata.json')
-  const creators = await Promise.all((await listJsonFiles('data/v1/creators')).map(readJson))
-  const featuredPlaylists = await Promise.all((await listJsonFiles('data/v1/playlists')).map(readJson))
-  const recentlyPlayed = await readJson('data/v1/recently-played-curators.json')
+  const metadata = await readJson('data/metadata.json')
+  const creators = await Promise.all((await listJsonFiles('data/creators')).map(readJson))
+  const featuredPlaylists = await Promise.all((await listJsonFiles('data/playlists')).map(readJson))
+  const recentlyPlayed = await readJson('data/recently-played-curators.json')
 
   return {
     metadata,
@@ -133,7 +133,7 @@ export async function validateDirectory() {
   const creatorIds = new Set()
   for (const creator of creators) {
     validateId(errors, creator.creatorId, `creator ${creator.creatorId || '<missing>'}`)
-    await validateFilenameId(errors, 'data/v1/creators', creator.creatorId, '.json', `creator ${creator.creatorId}`)
+    await validateFilenameId(errors, 'data/creators', creator.creatorId, '.json', `creator ${creator.creatorId}`)
     validateStatus(errors, creator.status, `creator ${creator.creatorId}`)
     validateString(errors, creator.displayName, `creator ${creator.creatorId} displayName`, 80)
     validateString(errors, creator.description, `creator ${creator.creatorId} description`, 280)
@@ -167,7 +167,7 @@ export async function validateDirectory() {
   const playlistIds = new Set()
   for (const playlist of featuredPlaylists) {
     validateId(errors, playlist.playlistId, `playlist ${playlist.playlistId || '<missing>'}`)
-    await validateFilenameId(errors, 'data/v1/playlists', playlist.playlistId, '.json', `playlist ${playlist.playlistId}`)
+    await validateFilenameId(errors, 'data/playlists', playlist.playlistId, '.json', `playlist ${playlist.playlistId}`)
     validateStatus(errors, playlist.status, `playlist ${playlist.playlistId}`)
     validateString(errors, playlist.title, `playlist ${playlist.playlistId} title`, 80)
     validateString(errors, playlist.description, `playlist ${playlist.playlistId} description`, 280)

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/v1/creator.schema.json",
+  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/creator.schema.json",
   "title": "Creator",
   "type": "object",
   "required": ["schemaVersion", "creatorId", "status", "displayName", "description", "products"],
@@ -42,4 +42,3 @@
   },
   "additionalProperties": false
 }
-

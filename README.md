@@ -11,11 +11,11 @@ Shared public data for DeckFilter and DeckSettings creator profiles, featured pl
 
 ## Source Layout
 
-- `data/v1/creators/{creatorId}.json`
-- `data/v1/playlists/{playlistId}.json`
-- `data/v1/recently-played-curators.json`
+- `data/creators/{creatorId}.json`
+- `data/playlists/{playlistId}.json`
+- `data/recently-played-curators.json`
 - `assets/creators/{creatorId}/`
-- `schemas/v1/`
+- `schemas/`
 
 ## Commands
 
@@ -29,4 +29,3 @@ npm run build
 ## Rights Notice
 
 Creator-submitted profile text, links, playlist text, and images are included for DeckFilter and DeckSettings directory use only. Do not reuse creator assets outside this directory, DeckFilter, DeckSettings, or related official project pages without verifying rights and consent.
-

@@ -5,8 +5,8 @@ Use a creator-friendly form for submissions, then publish accepted entries throu
 ## Review Workflow
 
 1. Review the form response for fit, consent, and completeness.
-2. Normalize the creator into `data/v1/creators/{creatorId}.json`.
-3. Normalize the playlist into `data/v1/playlists/{playlistId}.json`.
+2. Normalize the creator into `data/creators/{creatorId}.json`.
+3. Normalize the playlist into `data/playlists/{playlistId}.json`.
 4. Add creator images under `assets/creators/{creatorId}/`.
 5. Run `npm run validate` and `npm run build`.
 6. Open a pull request for review.
@@ -31,4 +31,3 @@ Use a creator-friendly form for submissions, then publish accepted entries throu
 - Keep `schemaVersion` at `1.0.0` for v1 entries.
 - Additive fields are allowed; breaking changes require a new `v2` contract.
 - Use `status: "paused"` for entries retained for future reuse but not currently shown by apps.
-
