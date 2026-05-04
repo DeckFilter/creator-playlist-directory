@@ -1,0 +1,89 @@
+name: Validate submission issue
+
+on:
+  issues:
+    types:
+      - opened
+      - edited
+      - reopened
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    if: contains(github.event.issue.labels.*.name, 'submission:creator-playlist')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate submission body
+        run: node scripts/validate-submission-issue.mjs --event "$GITHUB_EVENT_PATH" --out-dir .submission-validation
+
+      - name: Ensure submission labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh label create "submission:creator-playlist" --repo "$REPO" --color "5319e7" --description "Creator playlist submission intake" || true
+          gh label create "submission:valid" --repo "$REPO" --color "0e8a16" --description "Submission passed automated validation" || true
+          gh label create "submission:needs-review" --repo "$REPO" --color "fbca04" --description "Submission needs manual review before publishing" || true
+          gh label create "submission:invalid" --repo "$REPO" --color "d73a4a" --description "Submission has blocking validation issues" || true
+          gh label create "privacy-warning" --repo "$REPO" --color "b60205" --description "Submission appears to include private or forbidden identifiers" || true
+
+      - name: Apply validation labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh api "repos/$REPO/issues/$ISSUE_NUMBER" > .submission-validation/issue.json
+          node <<'NODE'
+          const fs = require('node:fs')
+          const issue = JSON.parse(fs.readFileSync('.submission-validation/issue.json', 'utf8'))
+          const result = JSON.parse(fs.readFileSync('.submission-validation/submission-result.json', 'utf8'))
+          const currentLabels = (issue.labels || []).map((label) => label.name)
+          const managedLabels = new Set(result.labels.managed)
+          const nextLabels = new Set(currentLabels.filter((label) => !managedLabels.has(label)))
+
+          nextLabels.add('submission:creator-playlist')
+          nextLabels.add(result.labels.status)
+          if (result.privacyWarning) nextLabels.add('privacy-warning')
+
+          fs.writeFileSync('.submission-validation/labels.json', `${JSON.stringify({ labels: [...nextLabels] }, null, 2)}\n`)
+          NODE
+          gh api --method PUT "repos/$REPO/issues/$ISSUE_NUMBER/labels" --input .submission-validation/labels.json
+
+      - name: Upsert validation comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh api "repos/$REPO/issues/$ISSUE_NUMBER/comments?per_page=100" > .submission-validation/comments.json
+          node <<'NODE'
+          const fs = require('node:fs')
+          const marker = '<!-- creator-database-submission-validation -->'
+          const comments = JSON.parse(fs.readFileSync('.submission-validation/comments.json', 'utf8'))
+          const existing = comments.find((comment) => comment.user?.type === 'Bot' && comment.body?.includes(marker))
+          const body = fs.readFileSync('.submission-validation/submission-report.md', 'utf8')
+
+          if (existing) {
+            fs.writeFileSync('.submission-validation/comment-id.txt', String(existing.id))
+          }
+
+          fs.writeFileSync('.submission-validation/comment.json', `${JSON.stringify({ body }, null, 2)}\n`)
+          NODE
+          COMMENT_ID="$(cat .submission-validation/comment-id.txt 2>/dev/null || true)"
+          if [ -n "$COMMENT_ID" ]; then
+            gh api --method PATCH "repos/$REPO/issues/comments/$COMMENT_ID" --input .submission-validation/comment.json
+          else
+            gh api --method POST "repos/$REPO/issues/$ISSUE_NUMBER/comments" --input .submission-validation/comment.json
+          fi
