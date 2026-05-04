@@ -13,9 +13,12 @@ DeckFilter-only recently played curator data and Steam IDs are intentionally not
 ## Creator Program
 
 - Public website: https://deckfilter.app/creator-program/
-- Submission form: https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
+- Private submission form: https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
+- Public GitHub submission form: https://github.com/DeckFilter/creator-database/issues/new/choose
 
-Use the public website for creator-facing context. Use the form for new creator playlist submissions; accepted entries are reviewed and normalized into this Creator Database before publishing.
+Use the public website for creator-facing context. Use the Google Form for creator-friendly submissions that include private contact details. Use the GitHub Issue Form only for public, structured submissions that should be validated in this repository.
+
+Accepted entries are still reviewed manually and normalized into this Creator Database through pull requests before publishing.
 
 ## Public Files
 
@@ -34,10 +37,13 @@ Use the public website for creator-facing context. Use the form for new creator 
 
 ```bash
 npm run validate
+npm run validate:submission-fixtures
 npm run build
 ```
 
 `npm run build` validates source data, copies public assets, and generates the `public/v1/` JSON files used by GitHub Pages.
+
+`npm run validate:submission-fixtures` checks the GitHub submission issue validator against local fixtures for valid, needs-review, invalid, privacy-warning, duplicate, overlong, and command-looking text scenarios.
 
 ## Rights Notice
 

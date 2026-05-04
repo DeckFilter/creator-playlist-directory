@@ -6,7 +6,7 @@
   "description": "Shared Creator Database data for DeckFilter and DeckSettings.",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "validate:submission-fixtures": "node scripts/test-submission-validation.mjs"
   }
 }
-

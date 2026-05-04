@@ -1,0 +1,100 @@
+name: Creator playlist submission
+description: Public structured submission for a creator profile and Steam Deck playlist.
+title: "[Submission]: "
+labels: ["submission:creator-playlist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a creator profile and playlist for DeckFilter and DeckSettings.
+
+        This GitHub issue is public. Do not include private contact details, email addresses, real names, Steam profile URLs, Steam IDs, phone numbers, private Discord invites, or anything you do not want visible publicly.
+
+        If you need to share private contact details, use the Google Form instead:
+        https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
+
+  - type: input
+    id: creator-name
+    attributes:
+      label: Creator/channel name
+      description: Public creator or channel name shown in the apps.
+      placeholder: Deck Ready
+    validations:
+      required: true
+
+  - type: textarea
+    id: creator-bio
+    attributes:
+      label: Creator bio
+      description: Short public profile text shown in the apps. Keep it concise.
+      placeholder: Everything Steam Deck, SteamOS and Steam itself.
+    validations:
+      required: true
+
+  - type: textarea
+    id: creator-public-links
+    attributes:
+      label: Creator public links
+      description: Public creator links only. Use one HTTPS URL per line. Do not include Steam profile URLs, Steam IDs, email addresses, or private contact links.
+      placeholder: |
+        https://www.youtube.com/@DeckReady
+        https://deckfilter.app/
+    validations:
+      required: false
+
+  - type: textarea
+    id: creator-image-links
+    attributes:
+      label: Creator image links
+      description: "Optional public image links. Best: channel/banner image, square channel image, and optional personal photo/avatar. Use one HTTPS URL per line."
+      placeholder: |
+        https://example.com/channel.jpg
+        https://example.com/banner.webp
+    validations:
+      required: false
+
+  - type: input
+    id: playlist-title
+    attributes:
+      label: Playlist title
+      description: Short public playlist title shown in the apps.
+      placeholder: Deck Favorites
+    validations:
+      required: true
+
+  - type: textarea
+    id: playlist-description
+    attributes:
+      label: Playlist description
+      description: Short public playlist description shown above the playlist. Less is more.
+      placeholder: My favorite games to play on Steam Deck.
+    validations:
+      required: true
+
+  - type: textarea
+    id: playlist-game-list
+    attributes:
+      label: Playlist game list
+      description: Send 5-20 games. Steam app IDs or Steam Store URLs are best because the apps build playlists from app IDs.
+      placeholder: |
+        Balatro - 2379780
+        https://store.steampowered.com/app/1296610/Peglin/
+        Portal 2 - 620
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: permission-confirmation
+    attributes:
+      label: Permission confirmation
+      options:
+        - label: I confirm I am authorized to submit this creator profile and playlist, and I allow DeckFilter and DeckSettings to display the submitted text, links, and public assets in the apps and official directory pages.
+          required: true
+
+  - type: checkboxes
+    id: review-acknowledgement
+    attributes:
+      label: Review acknowledgement
+      options:
+        - label: I understand submissions are reviewed manually and inclusion is not guaranteed.
+          required: true
