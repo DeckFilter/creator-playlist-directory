@@ -2,6 +2,11 @@
 
 Use a creator-friendly form for submissions, then publish accepted entries through reviewed GitHub pull requests. Do not publish directly from form responses.
 
+## Public Links
+
+- Creator Program website: https://deckfilter.app/creator-program/
+- Creator Playlist Submission form: https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
+
 ## Review Workflow
 
 1. Review the form response for fit, consent, and completeness.

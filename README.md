@@ -8,6 +8,13 @@ This repository is an early work-in-progress draft. The current data model and g
 
 The public files are useful for previewing the intended directory shape, but the apps do not consume this repository yet. Treat the current content as first-pass directory data, not a finalized public API or creator website.
 
+## Creator Program
+
+- Public website: https://deckfilter.app/creator-program/
+- Submission form: https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
+
+Use the public website for creator-facing context. Use the form for new creator playlist submissions; accepted entries are reviewed and normalized into this repository before publishing.
+
 ## Public Files
 
 - `https://deckfilter.github.io/creator-playlist-directory/v1/manifest.json`
