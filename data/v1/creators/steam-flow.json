@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "steam-flow",
+  "status": "active",
+  "displayName": "Steam Flow",
+  "description": "I cover everything Steam: Steam Deck, SteamOS, Steam Hardware, and PC gaming. News, Quick updates, performance impressions, and tips to make Steam even better!",
+  "steamId": "76561198038306605",
+  "links": {
+    "youtube": "https://www.youtube.com/@SteamFlow",
+    "x": "https://x.com/SunwindBG"
+  },
+  "images": {
+    "banner": "assets/creators/steam-flow/banner.jpg",
+    "channel": "assets/creators/steam-flow/channel.jpg",
+    "personal": "assets/creators/steam-flow/personal.png"
+  },
+  "products": ["deckfilter", "decksettings"]
+}
+

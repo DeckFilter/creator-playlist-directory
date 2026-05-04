@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "deckfilter-wintermute",
+  "status": "active",
+  "title": "DeckFilter's\nWintermute",
+  "description": "Snowy, winter-themed games I've played on the Deck or can't wait to experience during the cold season.",
+  "creatorId": "deckfilter",
+  "appIds": [1699230, 1275550, 305620, 1817190, 845070, 1053710, 343710, 365160, 1229020, 6510, 226720, 286690, 209000, 526160, 1266030, 543460, 494430, 1213700],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 10,
+    "decksettings": 90
+  }
+}
+

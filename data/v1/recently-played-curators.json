@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "cards": [
+    {
+      "creatorId": "deck-ready",
+      "steamId": "76561198014816423",
+      "title": "Deck Ready",
+      "image": "assets/creators/deck-ready/banner.jpg",
+      "youtubeUrl": "https://www.youtube.com/@DeckReady",
+      "placement": "primary",
+      "products": ["deckfilter"],
+      "productSort": {
+        "deckfilter": 10
+      }
+    },
+    {
+      "creatorId": "steam-flow",
+      "steamId": "76561198038306605",
+      "title": "Steam Flow",
+      "image": "assets/creators/steam-flow/banner.jpg",
+      "youtubeUrl": "https://www.youtube.com/@SteamFlow",
+      "placement": "primary",
+      "products": ["deckfilter"],
+      "productSort": {
+        "deckfilter": 20
+      }
+    },
+    {
+      "creatorId": "steam-deck-gaming",
+      "steamId": "76561197985118855",
+      "title": "Steam Deck Gaming",
+      "image": "assets/creators/steam-deck-gaming/banner.jpg",
+      "youtubeUrl": "https://www.youtube.com/@SteamDeckGaming",
+      "placement": "primary",
+      "products": ["deckfilter"],
+      "productSort": {
+        "deckfilter": 30
+      }
+    },
+    {
+      "creatorId": "deckfilter",
+      "steamId": "76561197998925108",
+      "title": "DeckFilter",
+      "image": "assets/creators/deckfilter/banner.jpg",
+      "placement": "final",
+      "products": ["deckfilter"],
+      "productSort": {
+        "deckfilter": 40
+      }
+    }
+  ]
+}
+

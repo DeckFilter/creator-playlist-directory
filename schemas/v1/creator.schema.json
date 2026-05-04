@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/v1/creator.schema.json",
+  "title": "Creator",
+  "type": "object",
+  "required": ["schemaVersion", "creatorId", "status", "displayName", "description", "products"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "creatorId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "status": { "enum": ["active", "paused"] },
+    "displayName": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 280 },
+    "steamId": { "type": "string", "pattern": "^[0-9]{17}$" },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "website": { "type": "string", "format": "uri" },
+        "youtube": { "type": "string", "format": "uri" },
+        "x": { "type": "string", "format": "uri" },
+        "instagram": { "type": "string", "format": "uri" },
+        "tiktok": { "type": "string", "format": "uri" }
+      }
+    },
+    "images": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "banner": { "type": "string" },
+        "channel": { "type": "string" },
+        "personal": { "type": "string" }
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": { "enum": ["deckfilter", "decksettings"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "productOverrides": { "type": "object" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}
+

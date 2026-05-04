@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "gardiner-bryant-deck-favorites",
+  "status": "active",
+  "title": "Gardiner Bryant's\nDeck Favorites",
+  "description": "I love games with roguelike elements, puzzle games, strategies, and arcade titles. These are some of my personal favorite games on Steam.",
+  "creatorId": "gardiner-bryant",
+  "appIds": [1905160, 1637320, 239350, 813230, 864060, 242680, 418530, 1972440, 2442020, 501590, 297860],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 50,
+    "decksettings": 30
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "santiago-santiago",
+  "status": "active",
+  "displayName": "Santiago Santiago",
+  "description": "Game performance and visual analysis! Many games, old and new! Gaming on PC and Steam Deck!",
+  "links": {
+    "youtube": "https://www.youtube.com/SantiagoSantiago",
+    "x": "https://x.com/SantiagoSantiYT"
+  },
+  "images": {
+    "personal": "assets/creators/santiago-santiago/personal.jpg"
+  },
+  "products": ["deckfilter", "decksettings"]
+}
+

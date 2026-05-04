@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "steam-deck-checker-deck-picks",
+  "status": "paused",
+  "title": "Steam Deck Checker's\nDeck Picks",
+  "description": "Games I've tested on Steam Deck and recommend checking out for performance, gameplay, or handheld appeal.",
+  "creatorId": "steam-deck-checker",
+  "appIds": [3321460, 22300, 2623190, 377160, 292030, 1716740],
+  "products": ["decksettings"],
+  "productSort": {
+    "decksettings": 75
+  },
+  "notes": "Paused while the creator refines this playlist's positioning and game selection."
+}
+

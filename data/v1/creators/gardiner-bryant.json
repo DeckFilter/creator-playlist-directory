@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "gardiner-bryant",
+  "status": "active",
+  "displayName": "Gardiner Bryant",
+  "description": "I'm a writer, content creator, and game designer from Maine in the US. I run gardinerbryant.com and the Gardiner Bryant YouTube channel. I love games with roguelike elements, puzzle games, strategies, and arcade titles.",
+  "links": {
+    "website": "https://gardinerbryant.com/",
+    "youtube": "https://www.youtube.com/@GardinerBryant"
+  },
+  "images": {
+    "channel": "assets/creators/gardiner-bryant/channel.jpg",
+    "personal": "assets/creators/gardiner-bryant/personal.webp"
+  },
+  "products": ["deckfilter", "decksettings"]
+}
+

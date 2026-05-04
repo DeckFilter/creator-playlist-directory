@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "baldly-rudy-baldly-best",
+  "status": "active",
+  "title": "Baldly Rudy's\nBaldly Best",
+  "description": "Rudy's favorite picks.",
+  "creatorId": "baldly-rudy",
+  "appIds": [524220, 1086940, 1145350, 2246340, 2515020, 1903340, 678950, 3764200, 1245620, 504230, 391540, 2379780, 1649240, 1817070, 1693980, 1262350, 1533420, 257850, 1687950, 1030300],
+  "products": ["decksettings"],
+  "productSort": {
+    "decksettings": 70
+  }
+}
+

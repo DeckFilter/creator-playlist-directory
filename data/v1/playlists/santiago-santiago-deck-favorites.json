@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "santiago-santiago-deck-favorites",
+  "status": "active",
+  "title": "Santiago Santiago's\nDeck Favorites",
+  "description": "These are the games that I recommend for their general stability on Steam Deck, battery life and overall price when on sale. Easy to pick up and play, some of the best stuff out there",
+  "creatorId": "santiago-santiago",
+  "appIds": [287700, 1328670, 2050650, 550, 524220, 241930, 2531310, 2215430, 2668510, 731490],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 70,
+    "decksettings": 50
+  }
+}
+

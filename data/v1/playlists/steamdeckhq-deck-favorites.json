@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "steamdeckhq-deck-favorites",
+  "status": "active",
+  "title": "SDHQ's\nDeck Favorites",
+  "description": "As the CEO of SDHQ, I play a ton of games, but these ones are the few that stood out to me the most this year. These are games I keep coming back to or I think are essential for the portable library.",
+  "creatorId": "steamdeckhq",
+  "appIds": [3405340, 2062430, 2161700, 3375780, 372360, 2993780, 1928690, 1569580, 3014080],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 60,
+    "decksettings": 40
+  }
+}
+

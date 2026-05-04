@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "steam-deck-checker",
+  "status": "paused",
+  "displayName": "Steam Deck Checker",
+  "description": "This is all about Valve's Steam Deck and Steam Deck OLED, including gameplay, performance tests, benchmarks, tutorials, and news about SteamOS, Proton, and PC gaming in handheld format.",
+  "links": {
+    "youtube": "https://www.youtube.com/@SteamDeckChecker",
+    "x": "https://x.com/SDeckChecker",
+    "instagram": "https://www.instagram.com/steamdeckchecker/"
+  },
+  "images": {
+    "channel": "assets/creators/steam-deck-checker/channel.jpg"
+  },
+  "products": ["decksettings"],
+  "notes": "Paused while the creator refines the submission; kept for reuse when re-enabled."
+}
+

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "innovision-games",
+  "status": "active",
+  "displayName": "InnoVision Games",
+  "description": "Computer scientist of 20 years, inventor, gamer, and toy collector. I use my experience to share a unique perspective on technology and gaming, with a few toys along the way.",
+  "links": {
+    "website": "https://innovisiongames.com/",
+    "youtube": "https://www.youtube.com/@InnoVisionGames"
+  },
+  "images": {
+    "channel": "assets/creators/innovision-games/channel.jpg"
+  },
+  "products": ["decksettings"]
+}
+

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "steamdeckhq",
+  "status": "active",
+  "displayName": "SteamDeckHQ",
+  "description": "Noah created SteamDeckHQ with the intention of being a Steam Deck hub that houses news, guides, and performance reviews for games.",
+  "links": {
+    "website": "https://steamdeckhq.com/",
+    "youtube": "https://www.youtube.com/@SteamDeckHQ"
+  },
+  "images": {
+    "channel": "assets/creators/steamdeckhq/channel.jpg",
+    "personal": "assets/creators/steamdeckhq/personal.webp"
+  },
+  "products": ["deckfilter", "decksettings"]
+}
+

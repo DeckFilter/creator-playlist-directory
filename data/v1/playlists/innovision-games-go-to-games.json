@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "innovision-games-go-to-games",
+  "status": "active",
+  "title": "InnoVision Games'\nGo-To Games",
+  "description": "A playlist of my favorite games. When I'm having trouble finding something to play, this is my go-to list.",
+  "creatorId": "innovision-games",
+  "appIds": [269770, 1245620, 2622380, 1868140, 400, 1118310, 1880620, 3837340, 268910, 1593500, 220, 2324290, 1895880, 1730700],
+  "products": ["decksettings"],
+  "productSort": {
+    "decksettings": 60
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "steam-flow-deck-favorites",
+  "status": "active",
+  "title": "Steam Flow's\nDeck Favorites",
+  "description": "These are the games I keep coming back to on the Steam Deck. They run great in handheld, feel good with controls, and are perfect for quick pick-up sessions. This playlist is all about fun, replayability, and games that make the Steam Deck shine.",
+  "creatorId": "steam-flow",
+  "appIds": [2321470, 2800900, 1794680, 2379780, 1172710, 365590, 620],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 40,
+    "decksettings": 20
+  }
+}
+

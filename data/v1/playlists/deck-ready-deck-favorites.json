@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "deck-ready-deck-favorites",
+  "status": "active",
+  "title": "Deck Ready's\nDeck Favorites",
+  "description": "I've played thousands of games on the Steam Deck and these are the ones I had the best time with. They all look, play and perform great on the Deck and will keep you busy for years to come",
+  "creatorId": "deck-ready",
+  "appIds": [418370, 1462040, 1245620, 1262350, 1627720, 550, 427190, 379430, 287700, 239140],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 30,
+    "decksettings": 10
+  }
+}
+

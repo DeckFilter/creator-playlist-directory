@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "creatorId": "steam-deck-gaming",
+  "status": "active",
+  "displayName": "Steam Deck Gaming",
+  "description": "Stay up to date on the latest info for Steam Deck Verified and Playable games, the most played games on the Steam Deck and everything else Steam Deck related.",
+  "steamId": "76561197985118855",
+  "links": {
+    "website": "https://steamdeckgaming.net/",
+    "youtube": "https://www.youtube.com/@SteamDeckGaming"
+  },
+  "images": {
+    "banner": "assets/creators/steam-deck-gaming/banner.jpg",
+    "channel": "assets/creators/steam-deck-gaming/channel.jpg"
+  },
+  "products": ["deckfilter", "decksettings"]
+}
+

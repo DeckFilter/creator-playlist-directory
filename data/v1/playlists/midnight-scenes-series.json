@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "midnight-scenes-series",
+  "status": "active",
+  "title": "Midnight Scenes Series",
+  "description": "A personal spotlight on the Midnight Scenes anthology. Pixel-art horror shorts I played on the Steam Deck, loved for their eerie atmosphere and subtle storytelling.",
+  "appIds": [1279700, 1382730, 1771070, 2197760, 2485750],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 80,
+    "decksettings": 100
+  }
+}
+

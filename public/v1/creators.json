@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0.0",
+  "publishedAt": "2026-05-04T00:00:00.000Z",
+  "revision": "2026-05-04-initial",
+  "assetBaseUrl": "https://deckfilter.github.io/creator-playlist-directory",
+  "creators": [
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "baldly-rudy",
+      "status": "active",
+      "displayName": "Baldly Rudy",
+      "description": "Hi! I'm Rudy and I test tech and games so you don't have to. I focus on PC Handhelds and powerful mobile tech.",
+      "links": {
+        "youtube": "https://www.youtube.com/@baldlyrudy/",
+        "x": "https://x.com/baldlyrudy",
+        "instagram": "https://www.instagram.com/baldlyrudy/",
+        "tiktok": "https://www.tiktok.com/@baldlyrudy/"
+      },
+      "images": {
+        "channel": {
+          "path": "assets/creators/baldly-rudy/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/baldly-rudy/channel.jpg"
+        }
+      },
+      "products": [
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "deck-ready",
+      "status": "active",
+      "displayName": "Deck Ready",
+      "description": "Everything Steam Deck, SteamOS and Steam itself, baby!",
+      "steamId": "76561198014816423",
+      "links": {
+        "youtube": "https://www.youtube.com/@DeckReady"
+      },
+      "images": {
+        "banner": {
+          "path": "assets/creators/deck-ready/banner.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/banner.jpg"
+        },
+        "channel": {
+          "path": "assets/creators/deck-ready/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/channel.jpg"
+        },
+        "personal": {
+          "path": "assets/creators/deck-ready/personal.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/personal.jpg"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "deckfilter",
+      "status": "active",
+      "displayName": "DeckFilter",
+      "description": "I am the creator of DeckFilter & DeckSettings mobile apps. I like Pixel graphics, Point & Click, Action-Adventure, and Walking Simulators. I hate PvP because I am just super bad at it.",
+      "steamId": "76561197998925108",
+      "links": {
+        "website": "https://deckfilter.app/"
+      },
+      "images": {
+        "banner": {
+          "path": "assets/creators/deckfilter/banner.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/banner.jpg"
+        },
+        "channel": {
+          "path": "assets/creators/deckfilter/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/channel.jpg"
+        },
+        "personal": {
+          "path": "assets/creators/deckfilter/personal.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/personal.jpg"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ],
+      "productOverrides": {
+        "decksettings": {
+          "displayName": "Felix (DeckFilter)",
+          "description": "I am the creator of DeckFilter & DeckSettings mobile apps. I like Pixel graphics, Point & Click, Action-Adventure, and Walking Simulators."
+        }
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "gardiner-bryant",
+      "status": "active",
+      "displayName": "Gardiner Bryant",
+      "description": "I'm a writer, content creator, and game designer from Maine in the US. I run gardinerbryant.com and the Gardiner Bryant YouTube channel. I love games with roguelike elements, puzzle games, strategies, and arcade titles.",
+      "links": {
+        "website": "https://gardinerbryant.com/",
+        "youtube": "https://www.youtube.com/@GardinerBryant"
+      },
+      "images": {
+        "channel": {
+          "path": "assets/creators/gardiner-bryant/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/gardiner-bryant/channel.jpg"
+        },
+        "personal": {
+          "path": "assets/creators/gardiner-bryant/personal.webp",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/gardiner-bryant/personal.webp"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "innovision-games",
+      "status": "active",
+      "displayName": "InnoVision Games",
+      "description": "Computer scientist of 20 years, inventor, gamer, and toy collector. I use my experience to share a unique perspective on technology and gaming, with a few toys along the way.",
+      "links": {
+        "website": "https://innovisiongames.com/",
+        "youtube": "https://www.youtube.com/@InnoVisionGames"
+      },
+      "images": {
+        "channel": {
+          "path": "assets/creators/innovision-games/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/innovision-games/channel.jpg"
+        }
+      },
+      "products": [
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "santiago-santiago",
+      "status": "active",
+      "displayName": "Santiago Santiago",
+      "description": "Game performance and visual analysis! Many games, old and new! Gaming on PC and Steam Deck!",
+      "links": {
+        "youtube": "https://www.youtube.com/SantiagoSantiago",
+        "x": "https://x.com/SantiagoSantiYT"
+      },
+      "images": {
+        "personal": {
+          "path": "assets/creators/santiago-santiago/personal.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/santiago-santiago/personal.jpg"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "steam-deck-checker",
+      "status": "paused",
+      "displayName": "Steam Deck Checker",
+      "description": "This is all about Valve's Steam Deck and Steam Deck OLED, including gameplay, performance tests, benchmarks, tutorials, and news about SteamOS, Proton, and PC gaming in handheld format.",
+      "links": {
+        "youtube": "https://www.youtube.com/@SteamDeckChecker",
+        "x": "https://x.com/SDeckChecker",
+        "instagram": "https://www.instagram.com/steamdeckchecker/"
+      },
+      "images": {
+        "channel": {
+          "path": "assets/creators/steam-deck-checker/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-checker/channel.jpg"
+        }
+      },
+      "products": [
+        "decksettings"
+      ],
+      "notes": "Paused while the creator refines the submission; kept for reuse when re-enabled."
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "steam-deck-gaming",
+      "status": "active",
+      "displayName": "Steam Deck Gaming",
+      "description": "Stay up to date on the latest info for Steam Deck Verified and Playable games, the most played games on the Steam Deck and everything else Steam Deck related.",
+      "steamId": "76561197985118855",
+      "links": {
+        "website": "https://steamdeckgaming.net/",
+        "youtube": "https://www.youtube.com/@SteamDeckGaming"
+      },
+      "images": {
+        "banner": {
+          "path": "assets/creators/steam-deck-gaming/banner.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/banner.jpg"
+        },
+        "channel": {
+          "path": "assets/creators/steam-deck-gaming/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/channel.jpg"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "steam-flow",
+      "status": "active",
+      "displayName": "Steam Flow",
+      "description": "I cover everything Steam: Steam Deck, SteamOS, Steam Hardware, and PC gaming. News, Quick updates, performance impressions, and tips to make Steam even better!",
+      "steamId": "76561198038306605",
+      "links": {
+        "youtube": "https://www.youtube.com/@SteamFlow",
+        "x": "https://x.com/SunwindBG"
+      },
+      "images": {
+        "banner": {
+          "path": "assets/creators/steam-flow/banner.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/banner.jpg"
+        },
+        "channel": {
+          "path": "assets/creators/steam-flow/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/channel.jpg"
+        },
+        "personal": {
+          "path": "assets/creators/steam-flow/personal.png",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/personal.png"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "creatorId": "steamdeckhq",
+      "status": "active",
+      "displayName": "SteamDeckHQ",
+      "description": "Noah created SteamDeckHQ with the intention of being a Steam Deck hub that houses news, guides, and performance reviews for games.",
+      "links": {
+        "website": "https://steamdeckhq.com/",
+        "youtube": "https://www.youtube.com/@SteamDeckHQ"
+      },
+      "images": {
+        "channel": {
+          "path": "assets/creators/steamdeckhq/channel.jpg",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steamdeckhq/channel.jpg"
+        },
+        "personal": {
+          "path": "assets/creators/steamdeckhq/personal.webp",
+          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steamdeckhq/personal.webp"
+        }
+      },
+      "products": [
+        "deckfilter",
+        "decksettings"
+      ]
+    }
+  ]
+}

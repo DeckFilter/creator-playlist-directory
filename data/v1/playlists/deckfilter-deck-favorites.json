@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "playlistId": "deckfilter-deck-favorites",
+  "status": "active",
+  "title": "DeckFilter's\nDeck Favorites",
+  "description": "My own Steam Deck favorites for a quick relaxing session. Always installed for a break in between.",
+  "creatorId": "deckfilter",
+  "appIds": [1296610, 1794680, 2187290, 1637320, 2835570, 3483740, 2510960, 3314790, 496300, 368230],
+  "products": ["deckfilter", "decksettings"],
+  "productSort": {
+    "deckfilter": 20,
+    "decksettings": 80
+  }
+}
+
