@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "publishedAt": "2026-05-04T00:00:00.000Z",
   "revision": "2026-05-04-initial",
-  "assetBaseUrl": "https://deckfilter.github.io/creator-playlist-directory",
+  "assetBaseUrl": "https://deckfilter.github.io/creator-database",
   "creators": [
     {
       "schemaVersion": "1.0.0",
@@ -19,7 +19,7 @@
       "images": {
         "channel": {
           "path": "assets/creators/baldly-rudy/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/baldly-rudy/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/baldly-rudy/channel.jpg"
         }
       },
       "products": [
@@ -39,15 +39,15 @@
       "images": {
         "banner": {
           "path": "assets/creators/deck-ready/banner.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/banner.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deck-ready/banner.jpg"
         },
         "channel": {
           "path": "assets/creators/deck-ready/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deck-ready/channel.jpg"
         },
         "personal": {
           "path": "assets/creators/deck-ready/personal.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/personal.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deck-ready/personal.jpg"
         }
       },
       "products": [
@@ -68,15 +68,15 @@
       "images": {
         "banner": {
           "path": "assets/creators/deckfilter/banner.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/banner.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deckfilter/banner.jpg"
         },
         "channel": {
           "path": "assets/creators/deckfilter/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deckfilter/channel.jpg"
         },
         "personal": {
           "path": "assets/creators/deckfilter/personal.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/personal.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/deckfilter/personal.jpg"
         }
       },
       "products": [
@@ -103,11 +103,11 @@
       "images": {
         "channel": {
           "path": "assets/creators/gardiner-bryant/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/gardiner-bryant/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/gardiner-bryant/channel.jpg"
         },
         "personal": {
           "path": "assets/creators/gardiner-bryant/personal.webp",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/gardiner-bryant/personal.webp"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/gardiner-bryant/personal.webp"
         }
       },
       "products": [
@@ -128,7 +128,7 @@
       "images": {
         "channel": {
           "path": "assets/creators/innovision-games/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/innovision-games/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/innovision-games/channel.jpg"
         }
       },
       "products": [
@@ -148,7 +148,7 @@
       "images": {
         "personal": {
           "path": "assets/creators/santiago-santiago/personal.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/santiago-santiago/personal.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/santiago-santiago/personal.jpg"
         }
       },
       "products": [
@@ -170,7 +170,7 @@
       "images": {
         "channel": {
           "path": "assets/creators/steam-deck-checker/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-checker/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-deck-checker/channel.jpg"
         }
       },
       "products": [
@@ -192,11 +192,11 @@
       "images": {
         "banner": {
           "path": "assets/creators/steam-deck-gaming/banner.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/banner.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-deck-gaming/banner.jpg"
         },
         "channel": {
           "path": "assets/creators/steam-deck-gaming/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-deck-gaming/channel.jpg"
         }
       },
       "products": [
@@ -218,15 +218,15 @@
       "images": {
         "banner": {
           "path": "assets/creators/steam-flow/banner.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/banner.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-flow/banner.jpg"
         },
         "channel": {
           "path": "assets/creators/steam-flow/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-flow/channel.jpg"
         },
         "personal": {
           "path": "assets/creators/steam-flow/personal.png",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/personal.png"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-flow/personal.png"
         }
       },
       "products": [
@@ -247,11 +247,11 @@
       "images": {
         "channel": {
           "path": "assets/creators/steamdeckhq/channel.jpg",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steamdeckhq/channel.jpg"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steamdeckhq/channel.jpg"
         },
         "personal": {
           "path": "assets/creators/steamdeckhq/personal.webp",
-          "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steamdeckhq/personal.webp"
+          "url": "https://deckfilter.github.io/creator-database/assets/creators/steamdeckhq/personal.webp"
         }
       },
       "products": [
@@ -581,7 +581,7 @@
       "title": "Deck Ready",
       "image": {
         "path": "assets/creators/deck-ready/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/deck-ready/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@DeckReady",
       "placement": "primary",
@@ -598,7 +598,7 @@
       "title": "Steam Flow",
       "image": {
         "path": "assets/creators/steam-flow/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-flow/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@SteamFlow",
       "placement": "primary",
@@ -615,7 +615,7 @@
       "title": "Steam Deck Gaming",
       "image": {
         "path": "assets/creators/steam-deck-gaming/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-deck-gaming/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@SteamDeckGaming",
       "placement": "primary",
@@ -632,7 +632,7 @@
       "title": "DeckFilter",
       "image": {
         "path": "assets/creators/deckfilter/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/deckfilter/banner.jpg"
       },
       "placement": "final",
       "products": [

@@ -1,4 +1,4 @@
-# Creator And Playlist Submissions
+# Creator Database Submissions
 
 Use a creator-friendly form for submissions, then publish accepted entries through reviewed GitHub pull requests. Do not publish directly from form responses.
 

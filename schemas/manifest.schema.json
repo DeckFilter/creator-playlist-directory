@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/manifest.schema.json",
-  "title": "Creator Playlist Directory Manifest",
+  "$id": "https://deckfilter.github.io/creator-database/schemas/manifest.schema.json",
+  "title": "Creator Database Manifest",
   "type": "object",
   "required": ["schemaVersion", "publishedAt", "revision", "assetBaseUrl", "creators", "featuredPlaylists", "recentlyPlayedCurators"],
   "properties": {

@@ -70,11 +70,11 @@ await fs.writeFile(
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Creator & Playlist Directory</title>
+    <title>Creator Database</title>
   </head>
   <body>
     <main>
-      <h1>Creator & Playlist Directory</h1>
+      <h1>Creator Database</h1>
       <p>Shared public data for DeckFilter and DeckSettings.</p>
       <ul>
         <li><a href="./v1/manifest.json">v1 manifest</a></li>

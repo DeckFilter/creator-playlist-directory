@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/recently-played-curators.schema.json",
+  "$id": "https://deckfilter.github.io/creator-database/schemas/recently-played-curators.schema.json",
   "title": "Recently Played Curators",
   "type": "object",
   "required": ["schemaVersion", "cards"],

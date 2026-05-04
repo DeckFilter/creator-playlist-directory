@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "publishedAt": "2026-05-04T00:00:00.000Z",
   "revision": "2026-05-04-initial",
-  "assetBaseUrl": "https://deckfilter.github.io/creator-playlist-directory",
+  "assetBaseUrl": "https://deckfilter.github.io/creator-database",
   "recentlyPlayedCurators": [
     {
       "creatorId": "deck-ready",
@@ -10,7 +10,7 @@
       "title": "Deck Ready",
       "image": {
         "path": "assets/creators/deck-ready/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deck-ready/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/deck-ready/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@DeckReady",
       "placement": "primary",
@@ -27,7 +27,7 @@
       "title": "Steam Flow",
       "image": {
         "path": "assets/creators/steam-flow/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-flow/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-flow/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@SteamFlow",
       "placement": "primary",
@@ -44,7 +44,7 @@
       "title": "Steam Deck Gaming",
       "image": {
         "path": "assets/creators/steam-deck-gaming/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/steam-deck-gaming/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/steam-deck-gaming/banner.jpg"
       },
       "youtubeUrl": "https://www.youtube.com/@SteamDeckGaming",
       "placement": "primary",
@@ -61,7 +61,7 @@
       "title": "DeckFilter",
       "image": {
         "path": "assets/creators/deckfilter/banner.jpg",
-        "url": "https://deckfilter.github.io/creator-playlist-directory/assets/creators/deckfilter/banner.jpg"
+        "url": "https://deckfilter.github.io/creator-database/assets/creators/deckfilter/banner.jpg"
       },
       "placement": "final",
       "products": [

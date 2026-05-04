@@ -1,9 +1,9 @@
 {
-  "name": "creator-playlist-directory",
+  "name": "creator-database",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Shared Creator & Playlist Directory data for DeckFilter and DeckSettings.",
+  "description": "Shared Creator Database data for DeckFilter and DeckSettings.",
   "scripts": {
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs"

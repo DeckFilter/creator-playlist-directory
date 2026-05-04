@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://deckfilter.github.io/creator-playlist-directory/schemas/featured-playlist.schema.json",
+  "$id": "https://deckfilter.github.io/creator-database/schemas/featured-playlist.schema.json",
   "title": "Featured Playlist",
   "type": "object",
   "required": ["schemaVersion", "playlistId", "status", "title", "description", "appIds", "products", "productSort"],

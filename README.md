@@ -1,4 +1,4 @@
-# Creator & Playlist Directory
+# Creator Database
 
 Shared public data for DeckFilter and DeckSettings creator profiles, featured playlists, recently played curator cards, and creator-facing images.
 
@@ -13,14 +13,14 @@ The public files are useful for previewing the intended directory shape, but the
 - Public website: https://deckfilter.app/creator-program/
 - Submission form: https://docs.google.com/forms/d/e/1FAIpQLSc31vv5ozbtrlByt2CWQhYHm9-ziwToQkat-BZPOxoL_Jn6ow/viewform
 
-Use the public website for creator-facing context. Use the form for new creator playlist submissions; accepted entries are reviewed and normalized into this repository before publishing.
+Use the public website for creator-facing context. Use the form for new creator playlist submissions; accepted entries are reviewed and normalized into this Creator Database before publishing.
 
 ## Public Files
 
-- `https://deckfilter.github.io/creator-playlist-directory/v1/manifest.json`
-- `https://deckfilter.github.io/creator-playlist-directory/v1/creators.json`
-- `https://deckfilter.github.io/creator-playlist-directory/v1/featured-playlists.json`
-- `https://deckfilter.github.io/creator-playlist-directory/v1/recently-played-curators.json`
+- `https://deckfilter.github.io/creator-database/v1/manifest.json`
+- `https://deckfilter.github.io/creator-database/v1/creators.json`
+- `https://deckfilter.github.io/creator-database/v1/featured-playlists.json`
+- `https://deckfilter.github.io/creator-database/v1/recently-played-curators.json`
 
 ## Source Layout
 
