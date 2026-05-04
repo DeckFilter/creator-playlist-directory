@@ -5,7 +5,6 @@ import { fileURLToPath } from 'node:url'
 export const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 export const products = new Set(['deckfilter', 'decksettings'])
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
-const steamIdPattern = /^[0-9]{17}$/
 const assetPattern = /^assets\/creators\/[a-z0-9-]+\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/
 
 export async function readJson(relativePath) {
@@ -25,13 +24,11 @@ export async function loadDirectory() {
   const metadata = await readJson('data/metadata.json')
   const creators = await Promise.all((await listJsonFiles('data/creators')).map(readJson))
   const featuredPlaylists = await Promise.all((await listJsonFiles('data/playlists')).map(readJson))
-  const recentlyPlayed = await readJson('data/recently-played-curators.json')
 
   return {
     metadata,
     creators,
     featuredPlaylists,
-    recentlyPlayedCurators: recentlyPlayed.cards,
   }
 }
 
@@ -91,6 +88,17 @@ async function validateAsset(errors, value, label) {
   }
 }
 
+async function validateAbsent(errors, relativePath, label) {
+  try {
+    await fs.access(path.join(repoRoot, relativePath))
+    fail(errors, `${label} must not exist in the public directory repo`)
+  } catch (error) {
+    if (error.code !== 'ENOENT') {
+      fail(errors, `${label} could not be checked: ${error.message}`)
+    }
+  }
+}
+
 function validateProducts(errors, itemProducts, productSort, label) {
   if (!Array.isArray(itemProducts) || itemProducts.length === 0) {
     fail(errors, `${label} products must be a non-empty array`)
@@ -122,10 +130,11 @@ function validateFilenameId(errors, relativeDir, id, suffix, label) {
 export async function validateDirectory() {
   const errors = []
   const directory = await loadDirectory()
-  const { metadata, creators, featuredPlaylists, recentlyPlayedCurators } = directory
+  const { metadata, creators, featuredPlaylists } = directory
   const expectedCounts = await readJson('scripts/expected-counts.json')
 
   if (metadata.schemaVersion !== '1.0.0') fail(errors, 'metadata.schemaVersion must be 1.0.0')
+  await validateAbsent(errors, 'data/recently-played-curators.json', 'DeckFilter-only recently played curator source')
   validateUrl(errors, metadata.assetBaseUrl, 'metadata.assetBaseUrl')
   if (Number.isNaN(Date.parse(metadata.publishedAt))) fail(errors, 'metadata.publishedAt must be a valid date-time')
   validateString(errors, metadata.revision, 'metadata.revision', 80)
@@ -142,8 +151,8 @@ export async function validateDirectory() {
     if (creatorIds.has(creator.creatorId)) fail(errors, `duplicate creatorId: ${creator.creatorId}`)
     creatorIds.add(creator.creatorId)
 
-    if (creator.steamId && !steamIdPattern.test(creator.steamId)) {
-      fail(errors, `creator ${creator.creatorId} steamId must be SteamID64`)
+    if (Object.prototype.hasOwnProperty.call(creator, 'steamId')) {
+      fail(errors, `creator ${creator.creatorId} must not publish steamId`)
     }
 
     for (const [key, url] of Object.entries(creator.links || {})) {
@@ -196,28 +205,13 @@ export async function validateDirectory() {
     }
   }
 
-  for (const [index, card] of recentlyPlayedCurators.entries()) {
-    const label = `recentlyPlayedCurators[${index}]`
-    if (!creatorIds.has(card.creatorId)) fail(errors, `${label} references missing creator ${card.creatorId}`)
-    if (!steamIdPattern.test(card.steamId || '')) fail(errors, `${label} steamId must be SteamID64`)
-    validateString(errors, card.title, `${label} title`, 80)
-    await validateAsset(errors, card.image, `${label} image`)
-    if (!['primary', 'final'].includes(card.placement)) fail(errors, `${label} placement must be primary or final`)
-    validateProducts(errors, card.products, card.productSort, label)
-  }
-
   const activeCreators = creators.filter((creator) => creator.status === 'active').length
   const activePlaylists = featuredPlaylists.filter((playlist) => playlist.status === 'active').length
-  const primaryRecentlyPlayed = recentlyPlayedCurators.filter((card) => card.placement === 'primary').length
-  const finalRecentlyPlayed = recentlyPlayedCurators.filter((card) => card.placement === 'final').length
 
   if (creators.length !== expectedCounts.creators.total) fail(errors, `expected ${expectedCounts.creators.total} total creators, found ${creators.length}`)
   if (activeCreators !== expectedCounts.creators.active) fail(errors, `expected ${expectedCounts.creators.active} active creators, found ${activeCreators}`)
   if (featuredPlaylists.length !== expectedCounts.featuredPlaylists.total) fail(errors, `expected ${expectedCounts.featuredPlaylists.total} total playlists, found ${featuredPlaylists.length}`)
   if (activePlaylists !== expectedCounts.featuredPlaylists.active) fail(errors, `expected ${expectedCounts.featuredPlaylists.active} active playlists, found ${activePlaylists}`)
-  if (recentlyPlayedCurators.length !== expectedCounts.recentlyPlayedCurators.total) fail(errors, `expected ${expectedCounts.recentlyPlayedCurators.total} recently played cards, found ${recentlyPlayedCurators.length}`)
-  if (primaryRecentlyPlayed !== expectedCounts.recentlyPlayedCurators.primary) fail(errors, `expected ${expectedCounts.recentlyPlayedCurators.primary} primary recently played cards, found ${primaryRecentlyPlayed}`)
-  if (finalRecentlyPlayed !== expectedCounts.recentlyPlayedCurators.final) fail(errors, `expected ${expectedCounts.recentlyPlayedCurators.final} final recently played cards, found ${finalRecentlyPlayed}`)
 
   return { errors, directory }
 }
@@ -238,11 +232,14 @@ export async function validatePublicOutput() {
   if (manifest.schemaVersion !== '1.0.0') fail(errors, 'public manifest schemaVersion must be 1.0.0')
   if (Number.isNaN(Date.parse(manifest.publishedAt))) fail(errors, 'public manifest publishedAt must be a valid date-time')
   validateString(errors, manifest.revision, 'public manifest revision', 80)
+  await validateAbsent(errors, 'public/v1/recently-played-curators.json', 'public recently played curator output')
   validateUrl(errors, manifest.assetBaseUrl, 'public manifest assetBaseUrl')
 
   if (!Array.isArray(manifest.creators)) fail(errors, 'public manifest creators must be an array')
   if (!Array.isArray(manifest.featuredPlaylists)) fail(errors, 'public manifest featuredPlaylists must be an array')
-  if (!Array.isArray(manifest.recentlyPlayedCurators)) fail(errors, 'public manifest recentlyPlayedCurators must be an array')
+  if (Object.prototype.hasOwnProperty.call(manifest, 'recentlyPlayedCurators')) {
+    fail(errors, 'public manifest must not publish recentlyPlayedCurators')
+  }
 
   if (Array.isArray(manifest.creators) && manifest.creators.length !== expectedCounts.creators.total) {
     fail(errors, `public manifest expected ${expectedCounts.creators.total} creators, found ${manifest.creators.length}`)
@@ -252,20 +249,16 @@ export async function validatePublicOutput() {
     fail(errors, `public manifest expected ${expectedCounts.featuredPlaylists.total} playlists, found ${manifest.featuredPlaylists.length}`)
   }
 
-  if (Array.isArray(manifest.recentlyPlayedCurators) && manifest.recentlyPlayedCurators.length !== expectedCounts.recentlyPlayedCurators.total) {
-    fail(errors, `public manifest expected ${expectedCounts.recentlyPlayedCurators.total} recently played curators, found ${manifest.recentlyPlayedCurators.length}`)
-  }
-
   const publicAssetChecks = []
 
   for (const creator of manifest.creators || []) {
+    if (Object.prototype.hasOwnProperty.call(creator, 'steamId')) {
+      fail(errors, `public creator ${creator.creatorId} must not publish steamId`)
+    }
+
     for (const [key, asset] of Object.entries(creator.images || {})) {
       publicAssetChecks.push(validatePublicAsset(errors, asset, `public creator ${creator.creatorId} images.${key}`, manifest.assetBaseUrl))
     }
-  }
-
-  for (const [index, card] of (manifest.recentlyPlayedCurators || []).entries()) {
-    publicAssetChecks.push(validatePublicAsset(errors, card.image, `public recentlyPlayedCurators[${index}] image`, manifest.assetBaseUrl))
   }
 
   await Promise.all(publicAssetChecks)

@@ -3,15 +3,14 @@
   "$id": "https://deckfilter.github.io/creator-database/schemas/manifest.schema.json",
   "title": "Creator Database Manifest",
   "type": "object",
-  "required": ["schemaVersion", "publishedAt", "revision", "assetBaseUrl", "creators", "featuredPlaylists", "recentlyPlayedCurators"],
+  "required": ["schemaVersion", "publishedAt", "revision", "assetBaseUrl", "creators", "featuredPlaylists"],
   "properties": {
     "schemaVersion": { "const": "1.0.0" },
     "publishedAt": { "type": "string", "format": "date-time" },
     "revision": { "type": "string", "minLength": 1 },
     "assetBaseUrl": { "type": "string", "format": "uri" },
     "creators": { "type": "array" },
-    "featuredPlaylists": { "type": "array" },
-    "recentlyPlayedCurators": { "type": "array" }
+    "featuredPlaylists": { "type": "array" }
   },
   "additionalProperties": false
 }

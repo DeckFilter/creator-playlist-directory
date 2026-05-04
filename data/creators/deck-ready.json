@@ -4,7 +4,6 @@
   "status": "active",
   "displayName": "Deck Ready",
   "description": "Everything Steam Deck, SteamOS and Steam itself, baby!",
-  "steamId": "76561198014816423",
   "links": {
     "youtube": "https://www.youtube.com/@DeckReady"
   },
@@ -15,4 +14,3 @@
   },
   "products": ["deckfilter", "decksettings"]
 }
-

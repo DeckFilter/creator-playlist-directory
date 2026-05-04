@@ -11,4 +11,4 @@ if (errors.length > 0) {
   process.exit(1)
 }
 
-console.log(`Validation passed: ${directory.creators.length} creators, ${directory.featuredPlaylists.length} playlists, ${directory.recentlyPlayedCurators.length} recently played curator cards.`)
+console.log(`Validation passed: ${directory.creators.length} creators, ${directory.featuredPlaylists.length} playlists.`)

@@ -10,7 +10,6 @@
     "status": { "enum": ["active", "paused"] },
     "displayName": { "type": "string", "minLength": 1, "maxLength": 80 },
     "description": { "type": "string", "minLength": 1, "maxLength": 280 },
-    "steamId": { "type": "string", "pattern": "^[0-9]{17}$" },
     "links": {
       "type": "object",
       "additionalProperties": false,
