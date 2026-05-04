@@ -28,6 +28,10 @@ jobs:
         with:
           node-version: 22
 
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
       - name: Validate data
         run: npm run validate
 
@@ -51,4 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
