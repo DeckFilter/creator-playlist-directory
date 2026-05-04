@@ -2,6 +2,12 @@
 
 Shared public data for DeckFilter and DeckSettings creator profiles, featured playlists, recently played curator cards, and creator-facing images.
 
+## Status
+
+This repository is an early work-in-progress draft. The current data model and generated JSON are experimental and may change while DeckFilter and DeckSettings integration is being designed.
+
+The public files are useful for previewing the intended directory shape, but the apps do not consume this repository yet. Treat the current content as first-pass directory data, not a finalized public API or creator website.
+
 ## Public Files
 
 - `https://deckfilter.github.io/creator-playlist-directory/v1/manifest.json`
